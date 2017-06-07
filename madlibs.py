@@ -53,6 +53,7 @@ def play_game():
 
 @app.route('/madlib')
 def show_madlib():
+    """Takes info, returns madlib."""
 
     person = request.args.get("person")
     color = request.args.get("color")
